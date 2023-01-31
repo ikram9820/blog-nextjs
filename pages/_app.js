@@ -1,5 +1,16 @@
-import '@/styles/globals.css'
+import Navigation from "@/components/layout/navigation";
+import "@/styles/globals.css";
+import "bootstrap/dist/css/bootstrap.css";
+import { useEffect } from "react";
 
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  useEffect(() => {
+    import("bootstrap/dist/js/bootstrap");
+  }, []);
+
+  return (
+    <Navigation>
+      <Component {...pageProps} />
+    </Navigation>
+  );
 }
