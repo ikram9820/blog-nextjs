@@ -6,6 +6,8 @@
 
 .post a {
   color: var(--color-grey-100);
+  text-decoration: none;
+
 }
 
 .image {
